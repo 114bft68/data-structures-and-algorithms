@@ -45,6 +45,7 @@ int main(int argc, char** argv) {
     int looped = binarySearch(searchFor, array, (size_t) (argc - 2));
     printf("%s. Looped for %d times.\n", looped ? "Found" : "Not found", looped);
 
+    free(array);
     return 0;
 
 }
